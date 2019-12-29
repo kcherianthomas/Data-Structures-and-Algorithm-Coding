@@ -1,6 +1,5 @@
 package com;
 
-import java.util.Stack;
 
 /*
  * Balanced strings are those who have equal quantity of 'L' and 'R' characters.
