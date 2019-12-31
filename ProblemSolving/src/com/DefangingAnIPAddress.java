@@ -1,15 +1,19 @@
 package com;
 
+/*
+ * A defanged IP address replaces every period "." with "[.]"
+ */
 public class DefangingAnIPAddress {
     public String defangIPaddr(String address) {
-        String temp = "";
+    	StringBuilder temp = new StringBuilder();
+        temp.append("");
         for(int i=0;i<address.length();++i) {
             if(address.charAt(i) == '.') {
-                temp+="[.]";
+            	temp.append("[.]");
             } else {
-                temp+= address.charAt(i);
+            	temp.append(address.charAt(i));
             }
         }
-        return temp;
+        return temp.toString();
     }
 }

@@ -12,18 +12,18 @@ public class NUniqueIntegerSumZero {
 		}
 		int[] arr = new int[n];
 		if (n % 2 == 0) {
-			for (int i = 1, j = 0; i <= n / 2; i++) {
+			for (int i = 1, j = 0; i <= n / 2; i++,j=j+2) {
 				arr[j] = i;
 				arr[j + 1] = i * -1;
-				j += 2;
+				
 			}
 
 		} else {
 			arr[0] = 0;
-			for (int i = 1, j = 1; i <= n / 2; i++) {
+			for (int i = 1, j = 1; i <= n / 2; i++,j=j+2) {
 				arr[j] = i;
 				arr[j + 1] = i * -1;
-				j += 2;
+				
 			}
 		}
 

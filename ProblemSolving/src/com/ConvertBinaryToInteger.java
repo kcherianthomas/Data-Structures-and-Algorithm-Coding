@@ -6,7 +6,7 @@ package com;
  * Time complexity is O(size of linked list)
  */
 public class ConvertBinaryToInteger {
-	public static int getDecimalValue(ListNode head) {
+	public  int getDecimalValue(ListNode head) {
 		int binVal = head.val;
 		while (null != head.next) {
 			head = head.next;
