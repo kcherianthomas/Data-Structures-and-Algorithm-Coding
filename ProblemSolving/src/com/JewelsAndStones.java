@@ -8,7 +8,7 @@ import java.util.Set;
  * and S contains all the stones
  * The time complexity is O(J.length()+S.length())
  */
-public class jewelsAndStones {
+public class JewelsAndStones {
 	 public int numJewelsInStones(String J, String S) {
 		 	int count =0;
 	        Set<String> jewels = new HashSet<>();
