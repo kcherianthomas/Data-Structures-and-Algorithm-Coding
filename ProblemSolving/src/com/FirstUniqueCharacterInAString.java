@@ -10,6 +10,11 @@ public class FirstUniqueCharacterInAString {
 	 * an array[26] instead of hashmap as its told
 	 * the string contains only lowercase letters
 	 */
+	/*
+	 * Stores the frequency in first iteration .
+	 * Check the first unique condition in second iteration
+	 * It has a linear time complexity 
+	 */
 	public int firstUniqChar(String s) {
 		if(null==s || s.equals("")) {
 			return -1;
