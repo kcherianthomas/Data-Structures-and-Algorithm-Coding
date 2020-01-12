@@ -1,25 +1,22 @@
 package com;
-
+/*
+ * Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, 
+ * find the one that is missing from the array.
+ */
 public class MissingNumber {
 	/*
-	 * Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, 
-	 * find the one that is missing from the array.
+	 * Using that property of xor. xor with 0 to N will remove all duplicates
+	 * except the missing value
 	 */
 	public int missingNumber(int[] nums) {
-		int[] arr = new int[nums.length + 1];
-		// setting all values of arr as 0
-		for (int i = 0; i < arr.length; ++i) {
-			arr[i] = 0;
+		int val=0;
+		int i=0;
+		//we are xoring
+		for(i=0;i<nums.length;++i) {
+			val=val^i^nums[i];
 		}
-		// storing each number at its index
-		for (int i = 0; i < nums.length; ++i) {
-			arr[nums[i]] = 1;
-		}
-		for (int i = 0; i < nums.length; ++i) {
-			if (arr[i] == 0) {
-				return i;
-			}
-		}
-		return 0;
+		//the below step is because it is 0 to N and not 1 to N
+		val = val^i;
+		return val;
 	}
 }
