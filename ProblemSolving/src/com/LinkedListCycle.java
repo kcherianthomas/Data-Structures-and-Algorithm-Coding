@@ -2,7 +2,7 @@ package com;
 //Given a linked list, determine if it has a cycle in it.
 public class LinkedListCycle {
 	/* Use a slow and fast pointer where fast pointer goes at
-	 * twice the speed as slow pointer. We can verify loop
+	 * twice the speed as slow pointer. We can verify cycle
 	 * when slow == fast.
 	 */
 	public boolean hasCycle(ListNode head) {
