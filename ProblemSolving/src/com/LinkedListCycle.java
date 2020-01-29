@@ -21,3 +21,4 @@ public class LinkedListCycle {
 		return true;
 	}
 }
+
