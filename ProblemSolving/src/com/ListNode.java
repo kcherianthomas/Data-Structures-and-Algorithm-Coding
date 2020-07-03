@@ -9,4 +9,17 @@ public class ListNode {
 		val = x;
 
 	}
+
+	@Override
+	public String toString() {
+		ListNode temp = this;
+		StringBuilder bld = new StringBuilder();
+		while(temp!=null) {
+			bld.append(temp.val);
+			bld.append(" ");
+			temp=temp.next;
+		}
+		return bld.toString();
+	}
+	
 }
