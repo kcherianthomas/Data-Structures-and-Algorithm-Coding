@@ -1,2 +1,2 @@
 # SolvingProblems
-My solutions to various coding questions mainly from leetcode. All the solutions are in JAVA.
+My solutions to various coding questions on leetcode. All the solutions are written in JAVA.
