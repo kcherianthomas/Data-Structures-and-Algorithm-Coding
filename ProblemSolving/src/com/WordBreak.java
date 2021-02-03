@@ -9,6 +9,7 @@ public class WordBreak {
 		if (s.length() == 0) {
 			return true;
 		}
+		// adding to set
 		Set<String> set = new HashSet<>();
 		for(String temp: wordDict) {
 			set.add(temp);

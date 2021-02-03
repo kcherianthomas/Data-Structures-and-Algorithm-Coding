@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Graph {
+	// number of vertex
 	private int vertex;
+	// list for adjacency list of each vertex + list for each vertex
 	private List<List<Integer>> adjL = new ArrayList<>();
 
 	public Graph(int vertex) {

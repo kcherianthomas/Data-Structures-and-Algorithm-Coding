@@ -1,7 +1,5 @@
 package com;
 
-import java.util.Arrays;
-
 public class LongestIncreasingSubsequence {
 	public int lengthOfLIS(int[] nums) {
 		if (nums.length == 0) {
@@ -14,7 +12,6 @@ public class LongestIncreasingSubsequence {
 		}
 		for (int i = 1; i < nums.length; ++i) {
 			for (int j = 0; j <= i; ++j) {
-				int val = 0;
 				if (nums[i] > nums[j]) {
 					dp[i] = Math.max(dp[i], 1 + dp[j]);
 				}

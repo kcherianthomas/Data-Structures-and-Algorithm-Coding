@@ -18,7 +18,6 @@ public class MinimumAbsoluteDifferenceBST {
 			arrayList = inOrder(root.left,arrayList);
 			arrayList.add(root.val);
 			arrayList = inOrder(root.right,arrayList);
-			arrayList.sort(null);
 		}
 		return arrayList;
 	}
